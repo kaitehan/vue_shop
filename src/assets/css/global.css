@@ -33,3 +33,23 @@ body,
 .el-table__expanded-cell {
     padding: 20px 50px !important;
 }
+
+.el-steps {
+    margin: 15px 0;
+}
+
+.el-step__title {
+    font-size: 13px;
+}
+
+.el-checkbox {
+    margin: 0 5px !important;
+}
+
+.ql-editor {
+    min-height: 300px;
+}
+
+.addBtn {
+    margin-top: 15px;
+}
