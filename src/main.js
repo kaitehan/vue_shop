@@ -13,6 +13,8 @@ import VueQuillEditor from 'vue-quill-editor'
 import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css' // for bubble theme
+// 引入Echarts
+import * as echarts from 'echarts'
 
 import axios from 'axios'
 // 配置请求的根路径
@@ -32,6 +34,8 @@ Vue.config.productionTip = false
 Vue.component('tree-table', ZkTable)
 // 将富文本编辑器，注册为全局可用的组件
 Vue.use(VueQuillEditor)
+
+Vue.prototype.$echarts = echarts
 
 Vue.filter('dateFormat', function (originVal) {
   const dt = new Date(originVal)
